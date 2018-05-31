@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>paper-item-collapse demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-loader.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../paper-item-collapse.html">
+    <link rel="import" href="../../paper-item/paper-item-body.html">
+    <link rel="import" href="../../paper-item/paper-item.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic paper-item-collapse demo</h3>
+      <demo-snippet>
+        <template>
+          <paper-item-collapse>
+            <paper-item-body two-lines>
+              <div>Linea 1</div>
+              <div secondary>Linea 2</div>
+            </paper-item-body>
+            <div slot="collapse-content">COLLAPSE CONTENT HERE</div>
+          </paper-item-collapse>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container centered">
+      <h3>Standard item demo</h3>
+      <demo-snippet>
+        <template>
+          <paper-item>
+            <paper-item-body two-lines>
+              <div>Linea 1</div>
+              <div secondary>Linea 2</div>
+            </paper-item-body>
+          </paper-item>
+        </template>
+      </demo-snippet>
+    </div>
+
+  </body>
+</html>
